@@ -25,7 +25,6 @@ public class OfferDao {
 	public void setDataSource(DataSource jdbc) {
 		this.jdbc = new NamedParameterJdbcTemplate(jdbc);
 	}
-
 	public List<Offer> getOffers() {
 
 		return jdbc.query("select * from offers", new RowMapper<Offer>() {
