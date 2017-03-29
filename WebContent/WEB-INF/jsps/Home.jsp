@@ -13,5 +13,8 @@
  	<p>Request using session object <%= session.getAttribute("name") %></p>
  	<p>Request using request object <%= request.getAttribute("name") %></p>
  	<p>Request using EL ${name}</p>
+ 	<p>
+ 	<c:out value="${name}"></c:out>
+ 	</p>
 </body>
 </html>

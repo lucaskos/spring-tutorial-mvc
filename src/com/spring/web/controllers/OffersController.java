@@ -15,7 +15,7 @@ public class OffersController {
 	public ModelAndView showHome(HttpSession session) {
 		ModelAndView mv = new ModelAndView("Home");
 		Map<String, Object> model = mv.getModel();
-		model.put("name", "Igor");
+		model.put("name", "<b>Igor</b>");
 		
 		//session.setAttribute("name", "Boris");
 		return mv;
