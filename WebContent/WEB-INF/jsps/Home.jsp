@@ -10,5 +10,7 @@
  	<p> Hello world!
  	</p>
  	<%= session.getAttribute("name") %>
+ 	<br>
+ 	<%= request.getAttribute("name") %>
 </body>
 </html>
